@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title> Profile </title>
+</head>
+<body>
+    <%- include('common') %>
+    <h1>Welcome <%= user.name %></h1>
+    <ul> 
+        <% user.skills.forEach((item)=>{ %>
+            <li> 
+                <%= item %>
+            </li>
+            <% }) %>
+    </ul>
+</body>
+</html>
+<!-- 
+    <%- is use to include html file using ejs
+    <%= is used to print data  
+ -->
